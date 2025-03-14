@@ -1,0 +1,11 @@
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1">
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="floor1">
+   <rect fill="White" height="95" id="room1" stroke="#000000" stroke-width="4" width="150" x="77" y="66.5"/>
+   <rect fill="White" height="95" id="room2" stroke="#000000" stroke-width="4" width="130" x="227" y="66.5"/>
+   <rect fill="#ffffff" height="91" id="svg_1" stroke="#000000" stroke-width="4" width="153" x="77" y="184.5"/>
+   <rect fill="#ffffff" height="95" id="svg_2" stroke="#000000" stroke-width="4" width="150" x="245" y="183.5"/>
+  </g>
+ </g>
+</svg>
