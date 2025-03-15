@@ -77,6 +77,7 @@ def extract_svg_data(svg_filepath):
                 })
             elif element.tag.endswith("path"):
                 attributes = element.attrib
+                id = attributes.get("id")
                 d = attributes.get("d", "")
                 fill = attributes.get("fill", "#FFFFFF")
                 stroke = attributes.get("stroke", "black")
@@ -84,6 +85,7 @@ def extract_svg_data(svg_filepath):
 
                 floor_data["paths"].append({
                     "type": "path",
+                    "id": id,
                     "d": d,
                     "fill": fill,
                     "stroke": stroke,
@@ -96,7 +98,7 @@ def extract_svg_data(svg_filepath):
 
 # Загружаем данные карты из SVG файла при запуске приложения
 with open("map_data.json", "w") as f:
-    json.dump(extract_svg_data("static/floorplans/floor0.svg"), f)
+    json.dump(extract_svg_data("static/floorplans/floor1.svg"), f)
 
 @app.route("/map_data")
 def get_map_data():

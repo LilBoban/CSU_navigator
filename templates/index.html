@@ -39,8 +39,8 @@
                         layer.add(rect);
                         if (room.id) {
                             const text = new Konva.Text({
-                                x: room.x + 10,
-                                y: room.y + 10,
+                                x: room.x + room.width / 2 - 10,
+                                y: room.y + room.height / 2,
                                 text: room.id,
                                 fontSize: 12,
                                 fill: 'black',
@@ -57,6 +57,19 @@
                             strokeWidth: path.stroke_width
                         });
                         layer.add(konvaPath);
+                        if (path.id) {
+                            const pathRect = konvaPath.getClientRect();
+                            const text = new Konva.Text({
+                                x: pathRect.x + pathRect.width / 2,
+                                y: pathRect.y + pathRect.height / 2,
+                                text: path.id,
+                                fontSize: 12,
+                                fill: 'black',
+                                offsetX: path.id.length * 3, // Центрируем по горизонтали
+                                offsetY: 6 // Центрируем по вертикали
+                            });
+                            layer.add(text);
+                        }
                     });
 
                     floor.roads.forEach(road => {

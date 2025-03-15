@@ -8,8 +8,7 @@
 <path id="r132b" d="M656.885 846.5H675.5V767.5H610.103V787.502L593 801.808L644.812 856L656.885 846.5Z" stroke="black"/>
 <path id="t1_w1" d="M593 801.5L644 856L635.5 863.5V874.5H542.5V818H574.5L593 801.5Z" stroke="black"/>
 <rect id="r145" x="828.5" y="648.5" width="81" height="78" fill="white" stroke="black"/>
-<rect id="r1tex1" x="-0.5" y="0.5" width="63" height="78" transform="matrix(-1 0 0 1 828 648)" fill="white" stroke="black"/>
-<rect id="r141" x="630.5" y="648.5" width="135" height="78" fill="white" stroke="black"/>
+<rect id="r1tex1" x="765.5" y="648.5" width="63" height="78" fill="white" stroke="black"/><rect id="r141" x="630.5" y="648.5" width="135" height="78" fill="white" stroke="black"/>
 <rect id="r139" x="546.392" y="648.5" width="85.0296" height="77.644" fill="white" stroke="black"/>
 <rect id="r1tex2" x="495.357" y="725.855" width="51.4926" height="41.5451" fill="white" stroke="black"/>
 <rect id="r137" x="404.953" y="767.111" width="90.8621" height="87.9579" fill="white" stroke="black"/>
