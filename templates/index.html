@@ -1,10 +1,9 @@
-<!-- static/index.html -->
+<!-- templates/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Konva & Flask Map</title>
-    <script src="https://unpkg.com/konva@8/konva.min.js"></script>
-    <style>
+    <script src="/static/js/konva.js"></script>    <style>
       #container {
         width: 100%;
         height: 100vh;
@@ -14,11 +13,10 @@
 <body>
     <div id="container"></div>
     <script>
-
         const stage = new Konva.Stage({
             container: 'container',
             width: 1920,
-            height: 1080,
+            height: 2522,
         });
 
         const layer = new Konva.Layer();
@@ -28,30 +26,38 @@
             .then(response => response.json())
             .then(mapData => {
                 mapData.floors.forEach(floor => {
-                  floor.rooms.forEach(room => {
-                    let rect = new Konva.Rect({
-                      x: room.x,
-                      y: room.y,
-                      width: room.width,
-                      height: room.height,
-                      fill: room.fill || 'white', // используем цвет из SVG или дефолтный
-                      stroke: 'black',
-                      strokeWidth: 1
+                    floor.rooms.forEach(room => {
+                        let rect = new Konva.Rect({
+                            x: room.x,
+                            y: room.y,
+                            width: room.width,
+                            height: room.height,
+                            fill: room.fill || 'white',
+                            stroke: 'black',
+                            strokeWidth: 1
+                        });
+                        layer.add(rect);
+                        if (room.id) {
+                            const text = new Konva.Text({
+                                x: room.x + 10,
+                                y: room.y + 10,
+                                text: room.id,
+                                fontSize: 12,
+                                fill: 'black',
+                            });
+                            layer.add(text);
+                        }
                     });
-                    layer.add(rect);
 
-                    // Добавляем текст (название комнаты)
-                   if (room.id) { // Если у комнаты есть ID, используем его как текст
-                      const text = new Konva.Text({
-                         x: room.x + 10,
-                         y: room.y + 10,
-                         text: room.id,
-                         fontSize: 12,
-                         fill: 'black',
-                     });
-                    layer.add(text)
-                    }
-                  });
+                    floor.paths.forEach(path => {
+                        const konvaPath = new Konva.Path({
+                            data: path.d,
+                            fill: path.fill,
+                            stroke: path.stroke,
+                            strokeWidth: path.stroke_width
+                        });
+                        layer.add(konvaPath);
+                    });
 
                     floor.roads.forEach(road => {
                     const line = new Konva.Line({
@@ -60,55 +66,11 @@
                         strokeWidth: 2,
                       });
                     layer.add(line)
-                  })
+                    });
 
+                    layer.draw();
                 });
-
-                 layer.draw();
-
             });
-
-            // ... остальной код фронтенда (масштабирование, панорамирование и т.д.)
-            stage.on('wheel', (e) => { // Масштабирование
-            // ... (код масштабирования из предыдущего примера)
-            });
-
-
-
-            let lastDist = 0;
-            stage.on('touchmove', function (e) { // Панорамирование
-                if (e.evt.touches.length < 2) {
-                  return;
-                }
-                 e.evt.preventDefault();
-
-                 var touch1 = e.evt.touches[0];
-                 var touch2 = e.evt.touches[1];
-
-                 if (stage.isDragging()) {
-                   stage.stopDrag();
-                   lastDist = 0;
-                 }
-
-                 var dist = Math.sqrt(
-                     (touch2.clientX - touch1.clientX) * (touch2.clientX - touch1.clientX) + (touch2.clientY - touch1.clientY) * (touch2.clientY - touch1.clientY)
-                     );
-
-
-
-                   if (!lastDist) {
-                    lastDist = dist
-                 }
-
-
-                 var scale = stage.scaleX() * (dist / lastDist);
-
-                 stage.scaleX(scale);
-                 stage.scaleY(scale);
-                 lastDist = dist;
-
-            });
-
     </script>
 </body>
 </html>

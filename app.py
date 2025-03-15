@@ -20,7 +20,8 @@ def extract_svg_data(svg_filepath):
             "roads": [],
             "stairs": [],
             "places": [],
-            "photoPoints": []
+            "photoPoints": [],
+            "paths": []
         }
 
         transform_regex = re.compile(r"translate\(([^,]+),\s*([^)]+)\)")  # Для translate
@@ -55,7 +56,6 @@ def extract_svg_data(svg_filepath):
                     "width": width,
                     "height": height,
                     "fill": fill_color,
-                    # ... другие атрибуты ...
                 })
             elif element.tag.endswith('line'):
                 attributes = element.attrib
@@ -75,36 +75,42 @@ def extract_svg_data(svg_filepath):
                     "start": {"x": x1, "y": y1},
                     "end": {"x": x2, "y": y2}
                 })
+            elif element.tag.endswith("path"):
+                attributes = element.attrib
+                d = attributes.get("d", "")
+                fill = attributes.get("fill", "#FFFFFF")
+                stroke = attributes.get("stroke", "black")
+                stroke_width = float(attributes.get("stroke-width", 1))
+
+                floor_data["paths"].append({
+                    "type": "path",
+                    "d": d,
+                    "fill": fill,
+                    "stroke": stroke,
+                    "stroke_width": stroke_width
+                })
+
         data['floors'].append(floor_data)
 
     return data
 
-
-# Загружаем данные карты из SVG файла при запуске приложения (можно изменить на динамическую загрузку)
-with open("map_data.json", "w") as f:  # Сохраняем данные в JSON файл для использования во фронтенде
+# Загружаем данные карты из SVG файла при запуске приложения
+with open("map_data.json", "w") as f:
     json.dump(extract_svg_data("static/floorplans/floor0.svg"), f)
-# Замените floorplan.svg на ваш SVG файл
-
-
 
 @app.route("/map_data")
 def get_map_data():
      with open("map_data.json", "r") as f:
         map_data_ = json.load(f)
-
      return jsonify(map_data_)
-
-
 
 @app.route("/")
 def index():
     return send_from_directory("templates", "index.html")
 
-
 @app.route('/static/<path:filename>')
 def static_files(filename):
     return send_from_directory('static', filename)
-
 
 if __name__ == "__main__":
     app.run(debug=True)

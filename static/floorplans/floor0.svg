@@ -1,40 +1,37 @@
-<?xml version="1.0"?>
 <svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1">
  <g class="layer">
   <title>Layer 1</title>
   <g id="floor0">
-   <rect fill="#000000" fill-opacity="0" height="97" id="r014" stroke="#000000" width="168" x="550" y="789"/>
+   <rect fill="#000000" fill-opacity="0" height="97" id="r014" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="168" x="550" y="789"/>
    <rect fill="#000000" fill-opacity="0" height="100" id="r027" stroke="#000000" width="100" x="550" y="950"/>
    <rect fill="#000000" fill-opacity="0" height="64" id="rtex1" stroke="#000000" width="62" x="550" y="886"/>
    <line fill="none" fill-opacity="0" id="svg_11" stroke="#000000" x1="718" x2="753" y1="789" y2="789"/>
    <rect fill="#000000" fill-opacity="0" height="97" id="r012" stroke="#000000" width="122" x="753" y="789"/>
    <rect fill="#000000" fill-opacity="0" height="100" id="r025" stroke="#000000" width="65" x="650" y="950"/>
-   <rect fill="#000000" fill-opacity="0" height="0" id="svg_14" stroke="#000000" width="0" x="693" y="982"/>
-   <rect fill="#000000" fill-opacity="0" height="0" id="svg_15" stroke="#000000" width="0" x="857" y="841"/>
+   <rect fill="#000000" fill-opacity="0" id="svg_14" stroke="#000000" x="693" y="982"/>
+   <rect fill="#000000" fill-opacity="0" id="svg_15" stroke="#000000" x="857" y="841"/>
    <rect fill="#000000" fill-opacity="0" height="100" id="r023" stroke="#000000" width="96" x="715" y="950"/>
    <rect fill="#000000" fill-opacity="0" height="100" id="rtex2" stroke="#000000" width="34" x="811" y="950"/>
-   <rect fill="#000000" fill-opacity="0" height="100" id="rtex3" stroke="#000000" width="174" x="845" y="950"/>
-   <line fill="none" fill-opacity="0" id="svg_21" stroke="#000000" x1="916" x2="875" y1="748" y2="789"/>
-   <line fill="none" fill-opacity="0" id="svg_22" stroke="#000000" x1="953" x2="953" y1="792" y2="886"/>
-   <line fill="none" fill-opacity="0" id="svg_23" stroke="#000000" x1="875" x2="953" y1="886" y2="886"/>
-   <rect fill="none" fill-opacity="0" height="101" id="r008" stroke="#000000" width="101" x="916" y="691"/>
+   <rect fill="#000000" fill-opacity="0" height="100" id="rtex3" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="174" x="845" y="950"/>
+   <rect fill="none" fill-opacity="0" height="101" id="r008" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="101" x="916" y="691"/>
    <rect fill="none" fill-opacity="0" height="101" id="r006" stroke="#000000" width="101" x="916" y="590"/>
    <rect fill="none" fill-opacity="0" height="101" id="r004" stroke="#000000" width="101" x="916" y="489"/>
-   <rect fill="none" fill-opacity="0" height="60" id="rtex4" stroke="#000000" width="101" x="916" y="429"/>
-   <rect fill="none" fill-opacity="0" height="50" id="r002" stroke="#000000" width="70" x="947" y="379"/>
-   <rect fill="none" fill-opacity="0" height="50" id="r002a" stroke="#000000" width="70" x="947" y="329"/>
-   <rect fill="none" fill-opacity="0" height="50" id="r002b" stroke="#000000" width="70" x="947" y="279"/>
-   <rect fill="none" fill-opacity="0" height="145" id="r001" stroke="#000000" width="171" x="914" y="134"/>
-   <rect fill="none" fill-opacity="0" height="44" id="r003" stroke="#000000" width="74" x="1085" y="279"/>
-   <rect fill="none" fill-opacity="0" height="63" id="ladder1" stroke="#000000" width="134" x="1117" y="323"/>
+   <rect fill="none" fill-opacity="0" height="60" id="rtex4" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="101" x="916" y="429"/>
+   <rect fill="none" fill-opacity="0" height="50" id="r002" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="70" x="947" y="379"/>
+   <rect fill="none" fill-opacity="0" height="50" id="r002a" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="70" x="947" y="329"/>
+   <rect fill="none" fill-opacity="0" height="50" id="r002b" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="70" x="947" y="279"/>
+   <rect fill="none" fill-opacity="0" height="145" id="r001" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="171" x="914" y="134"/>
+   <rect fill="none" fill-opacity="0" height="44" id="r003" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="74" x="1085" y="279"/>
+   <rect fill="none" fill-opacity="0" height="63" id="ladder1" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="134" x="1117" y="323"/>
    <line fill="none" fill-opacity="0" id="svg_34" stroke="#000000" x1="1159" x2="1159" y1="386" y2="428"/>
-   <rect fill="none" fill-opacity="0" height="60" id="r007" stroke="#000000" width="103" x="1085" y="428"/>
-   <rect fill="none" fill-opacity="0" height="99" id="r009" stroke="#000000" width="103" x="1085" y="488"/>
+   <rect fill="none" fill-opacity="0" height="60" id="r007" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="103" x="1085" y="428"/>
+   <rect fill="none" fill-opacity="0" height="99" id="r009" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="103" x="1085" y="488"/>
    <rect fill="none" fill-opacity="0" height="101" id="r011" stroke="#000000" width="103" x="1085" y="587"/>
-   <rect fill="none" fill-opacity="0" height="104" id="r013" stroke="#000000" width="103" x="1085" y="688"/>
-   <rect fill="none" fill-opacity="0" height="46" id="r015" stroke="#000000" width="103" x="1085" y="792"/>
-   <rect fill="none" fill-opacity="0" height="48" id="r017" stroke="#000000" width="103" x="1085" y="838"/>
-   <rect fill="none" fill-opacity="0" height="64" id="ladder2" stroke="#000000" width="108" x="982" y="886"/>
+   <rect fill="none" fill-opacity="0" height="104" id="r013" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="103" x="1085" y="688"/>
+   <rect fill="none" fill-opacity="0" height="46" id="r015" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="103" x="1085" y="792"/>
+   <rect fill="none" fill-opacity="0" height="48" id="r017" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="103" x="1085" y="838"/>
+   <rect fill="none" fill-opacity="0" height="64" id="ladder2" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="108" x="982" y="886"/>
+   <path d="m916,748l-41.2,40.8l0,97l78,-0.8l0,-93l-36.6,0l-0.2,-44z" fill="#FFFFFF" fill-opacity="0" id="rtex5" stroke="black" transform="matrix(1 0 0 1 0 0)"/>
   </g>
  </g>
 </svg>
