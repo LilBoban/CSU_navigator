@@ -1,12 +1,27 @@
   const container = document.getElementById('container');
   const floorSelect = document.getElementById('floor-select');
 
+  function setupStageSize() {
+    const container = document.getElementById('container');
+    stage.width(container.clientWidth);
+    stage.height(container.clientHeight);
+
+    // Перерисовка при изменении размера окна
+    window.addEventListener('resize', () => {
+        stage.width(container.clientWidth);
+        stage.height(container.clientHeight);
+        stage.batchDraw();
+    });
+}
+
   const stage = new Konva.Stage({
       container: 'container',
       width: innerWidth,
       height: innerHeight,
       draggable: true
   });
+
+  setupStageSize();
 
   // Функция сброса масштаба и позиции
   function resetStageTransform() {
@@ -172,30 +187,52 @@
   }
 
   function renderFloor(floorNumber) {
-      // Сбрасываем трансформации перед отрисовкой нового этажа
-      resetStageTransform();
+    // Сбрасываем трансформации перед отрисовкой нового этажа
+    resetStageTransform();
 
-      layer.destroyChildren();
+    layer.destroyChildren();
 
-      const floorData = mapData.floors.find(floor => floor.id === `floor${floorNumber}`);
+    const floorData = mapData.floors.find(floor => floor.id === `floor${floorNumber}`);
 
-      if (!floorData) {
-          console.error(`Floor ${floorNumber} not found`);
-          return;
-      }
+    if (!floorData) {
+        console.error(`Floor ${floorNumber} not found`);
+        return;
+    }
 
-      // Отрисовка комнат, путей и дорог
-      renderElements(floorData.rooms);
-      renderElements(floorData.paths);
-      renderElements(floorData.roads);
+    // Отрисовка комнат, путей и дорог
+    renderElements(floorData.rooms);
+    renderElements(floorData.paths);
+    renderElements(floorData.roads);
 
-      // Отрисовка подгрупп
-      floorData.subgroups.forEach(subgroup => {
-          renderElements(subgroup.elements);
-      });
+    // Отрисовка подгрупп
+    floorData.subgroups.forEach(subgroup => {
+        renderElements(subgroup.elements);
+    });
 
-      layer.draw();
-  }
+    layer.draw();
+
+    // Центрирование карты
+    const stageWidth = stage.width();
+    const stageHeight = stage.height();
+    const layerBox = layer.getClientRect();
+
+    const scaleX = stageWidth / layerBox.width;
+    const scaleY = stageHeight / layerBox.height;
+    const scale = Math.min(scaleX, scaleY) * 1.2; // 120% от максимального масштаба
+
+    stage.scale({ x: scale, y: scale });
+
+    const centerX = (stageWidth - layerBox.width * scale) / 2;
+    const centerY = (stageHeight - layerBox.height * scale) / 2;
+
+    stage.position({
+        x: centerX - layerBox.x * scale,
+        y: centerY - layerBox.y * scale
+    });
+
+    stage.batchDraw();
+}
+
 
   fetch('/map_data')
       .then(response => response.json())
