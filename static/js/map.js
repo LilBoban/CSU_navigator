@@ -41,19 +41,30 @@
   let lastPos = { x: 0, y: 0 };
 
   // Функция ограничения перемещения
-  function constrainPosition(pos) {
-      const scale = stage.scaleX();
-      const stageWidth = LIMIT_WIDTH * scale;
-      const stageHeight = LIMIT_HEIGHT * scale;
+ function constrainPosition(pos) {
+    const scale = stage.scaleX();
+    const stageWidth = stage.width();
+    const stageHeight = stage.height();
+    const contentWidth = LIMIT_WIDTH * scale;
+    const contentHeight = LIMIT_HEIGHT * scale;
 
-      // Ограничения по горизонтали
-      pos.x = Math.max(Math.min(pos.x, 0), -(stageWidth - stage.width()));
+    // Центрирование по горизонтали, если контент меньше stage
+    if (contentWidth < stageWidth) {
+        pos.x = (stageWidth - contentWidth) / 2;
+    } else {
+        // Стандартные ограничения при большом контенте
+        pos.x = Math.max(Math.min(pos.x, 0), -(contentWidth - stageWidth));
+    }
 
-      // Ограничения по вертикали
-      pos.y = Math.max(Math.min(pos.y, 0), -(stageHeight - stage.height()));
+    // Аналогично по вертикали
+    if (contentHeight < stageHeight) {
+        pos.y = (stageHeight - contentHeight) / 2;
+    } else {
+        pos.y = Math.max(Math.min(pos.y, 0), -(contentHeight - stageHeight));
+    }
 
-      return pos;
-  }
+    return pos;
+}
 
   // Обработчик начала перетаскивания
   stage.on('dragstart', function(e) {
@@ -79,43 +90,43 @@
   });
 
   // Обработка колесика мыши для зума
-  stage.on('wheel', (e) => {
-      e.evt.preventDefault();
+stage.on('wheel', (e) => {
+    e.evt.preventDefault();
 
-      // Текущие параметры
-      const oldScale = stage.scaleX();
-      const pointer = stage.getPointerPosition();
+    // Текущие параметры
+    const oldScale = stage.scaleX();
+    const pointer = stage.getPointerPosition();
 
-      // Вычисление новго масштаба
-      const scaleBy = 1.1;
-      const newScale = e.evt.deltaY > 0
-          ? oldScale / scaleBy
-          : oldScale * scaleBy;
+    // Вычисление нового масштаба
+    const scaleBy = 1.1;
+    const newScale = e.evt.deltaY > 0
+        ? oldScale / scaleBy
+        : oldScale * scaleBy;
 
-      // Ограничение масштаба
-      const clampedScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, newScale));
+    // Ограничение масштаба
+    const clampedScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, newScale));
 
-      // Вычисление позиции с учетом курсора
-      const mousePointTo = {
-          x: (pointer.x - stage.x()) / oldScale,
-          y: (pointer.y - stage.y()) / oldScale,
-      };
+    // Вычисление позиции с учетом курсора
+    const mousePointTo = {
+        x: (pointer.x - stage.x()) / oldScale,
+        y: (pointer.y - stage.y()) / oldScale,
+    };
 
-      // Применение нового масштаба
-      stage.scale({ x: clampedScale, y: clampedScale });
+    // Применение нового масштаба
+    stage.scale({ x: clampedScale, y: clampedScale });
 
-      // Вычисление новой позиции
-      const newPos = {
-          x: pointer.x - mousePointTo.x * clampedScale,
-          y: pointer.y - mousePointTo.y * clampedScale
-      };
+    // Вычисление новой позиции с точным центрированием
+    const newPos = {
+        x: pointer.x - mousePointTo.x * clampedScale,
+        y: pointer.y - mousePointTo.y * clampedScale
+    };
 
-      // Ограничение новой позиции
-      const constrainedPos = constrainPosition(newPos);
-      stage.position(constrainedPos);
+    // Ограничение новой позиции
+    const constrainedPos = constrainPosition(newPos);
+    stage.position(constrainedPos);
 
-      stage.batchDraw();
-  });
+    stage.batchDraw();
+});
 
   const layer = new Konva.Layer();
   stage.add(layer);
