@@ -1,0 +1,147 @@
+<svg width="1920" height="2522" viewBox="0 0 1920 2522" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="floor3">
+            <g id="floor3">
+                <rect id="lift3" x="913.5" y="247.5" width="17" height="17" fill="white" stroke="black"/>
+                <rect id="ladder3_1" x="937.5" y="266.386" width="52" height="43.3113" fill="white" stroke="black"/>
+                <rect id="r3tex1" x="1111.5" y="145.5" width="62" height="43" fill="white" stroke="black"/>
+                <rect id="r354" x="1078.5" y="188.5" width="95" height="85" fill="white" stroke="black"/>
+                <rect id="r353" x="989.5" y="67.5" width="122" height="78" fill="white" stroke="black"/>
+                <rect id="r350" x="1041.5" y="188.5" width="37" height="85" fill="white" stroke="black"/>
+                <rect id="r348" x="989.5" y="188.5" width="52" height="85" fill="white" stroke="black"/>
+                <rect id="r351a" x="910.5" y="67.5" width="79" height="78" fill="white" stroke="black"/>
+                <rect id="r344" x="868.5" y="187.5" width="42" height="79" fill="white" stroke="black"/>
+                <rect id="r342b" x="777.5" y="187.5" width="91" height="79" fill="white" stroke="black"/>
+                <rect id="r3tex2" x="676.5" y="187.5" width="101" height="79" fill="white" stroke="black"/>
+                <rect id="r349/2" x="794.5" y="67.5" width="116" height="78" fill="white" stroke="black"/>
+                <rect id="r349/1" x="682.5" y="67.5" width="112" height="78" fill="white" stroke="black"/>
+                <rect id="r347" x="553.5" y="67.5" width="129" height="78.3482" fill="white" stroke="black"/>
+                <rect id="r345a" x="495.5" y="139.5" width="58" height="50" fill="white" stroke="black"/>
+                <path id="t3_m1"
+                      d="M657.771 266.5H677L676.494 187L610.711 188L610.309 207.502L593 222L645.627 276L657.771 266.5Z"
+                      stroke="black"/>
+                <path id="t3_w1"
+                      d="M593.391 222L645.391 276L635.391 283.5L635.5 294.5H542.391L542 239H574.391L593.391 222Z"
+                      stroke="black"/>
+                <rect id="r345" x="405.5" y="189.5" width="90" height="71" fill="white" stroke="black"/>
+                <rect id="r341" x="405.5" y="260.5" width="90" height="127" fill="white" stroke="black"/>
+                <rect id="r339" x="405.5" y="387.5" width="90" height="37.1284" fill="white" stroke="black"/>
+                <rect id="r343" x="405.5" y="424.5" width="90" height="32" fill="white" stroke="black"/>
+                <rect id="r339_2" x="405.5" y="456.5" width="90" height="41" fill="white" stroke="black"/>
+                <g id="r339a">
+                    <mask id="path-23-inside-1_29_230" fill="white">
+                        <path d="M421 497H496V527H421V497Z"/>
+                    </mask>
+                    <path d="M421 497H496V527H421V497Z" fill="white" stroke="black" stroke-width="2"
+                          mask="url(#path-23-inside-1_29_230)"/>
+                </g>
+                <rect id="r340" x="542.5" y="294.5" width="93" height="34" fill="white" stroke="black"/>
+                <rect id="r338" x="542.5" y="328.5" width="93" height="68" fill="white" stroke="black"/>
+                <rect id="r336" x="542.5" y="392.5" width="93" height="47" fill="white" stroke="black"/>
+                <rect id="r3tex3" x="542.5" y="439.5" width="93" height="58" fill="white" stroke="black"/>
+                <rect id="ladder3_2" x="368.5" y="526.5" width="53" height="41" fill="white" stroke="black"/>
+                <path id="r334a" d="M603.5 497.5H542.5V531L603.5 566.5V497.5Z" stroke="black"/>
+                <path id="r332a" d="M542.5 596V531L603.5 566V596H542.5Z" stroke="black"/>
+                <rect id="r337a" x="421.5" y="567.291" width="71" height="30.9454" fill="white" stroke="black"/>
+                <rect id="r337" x="402.5" y="598.206" width="90" height="80.4092" fill="white" stroke="black"/>
+                <rect id="r335" x="402.5" y="677.554" width="90" height="30.9454" fill="white" stroke="black"/>
+                <rect id="r333" x="402.5" y="707.5" width="90" height="101" fill="white" stroke="black"/>
+                <rect id="r331" x="402.5" y="808.5" width="90" height="78" fill="white" stroke="black"/>
+                <rect id="r332" x="542.5" y="595.5" width="93" height="62" fill="white" stroke="black"/>
+                <rect id="r330" x="542.5" y="657.5" width="93" height="69" fill="white" stroke="black"/>
+                <rect id="r328" x="542.5" y="726.5" width="93" height="27" fill="white" stroke="black"/>
+                <g id="r331_2">
+                    <mask id="path-39-inside-2_29_230" fill="white">
+                        <path d="M492 886.244H539V927.464H492V886.244Z"/>
+                    </mask>
+                    <path d="M492 886.244H539V927.464H492V886.244Z" fill="white" stroke="black" stroke-width="2"
+                          mask="url(#path-39-inside-2_29_230)"/>
+                </g>
+                <path id="t3_m2"
+                      d="M635.5 767L635.5 753.5L542.5 753.158L542.5 812.158L574.957 812.158L591.454 830.587L644.957 780.158L635.5 767Z"
+                      stroke="black"/>
+                <path id="r326a"
+                      d="M591.454 830.588L644.957 780.158L653 789.5L665.5 789.5L665.5 864.5L608.5 864.5L608.5 850L591.454 830.588Z"
+                      stroke="black"/>
+                <rect id="r3tex4" x="538.5" y="907.5" width="78" height="79" fill="white" stroke="black"/>
+                <rect id="r327" x="616.5" y="907.5" width="84" height="79" fill="white" stroke="black"/>
+                <rect id="r325" x="700.5" y="907.5" width="154" height="79" fill="white" stroke="black"/>
+                <rect id="r323" x="854.5" y="907.5" width="42" height="79" fill="white" stroke="black"/>
+                <rect id="r326" x="665.5" y="789.5" width="115" height="75" fill="white" stroke="black"/>
+                <rect id="r324" x="779.5" y="789.5" width="80" height="75" fill="white" stroke="black"/>
+                <rect id="r322" x="859.5" y="789.5" width="45" height="75" fill="white" stroke="black"/>
+                <rect id="r3tex5" x="896.5" y="907.5" width="38" height="66" fill="white" stroke="black"/>
+                <rect id="r320" x="904.5" y="799.5" width="112" height="65" fill="white" stroke="black"/>
+                <rect id="ladder3_3" x="934.5" y="973.5" width="52" height="40" fill="white" stroke="black"/>
+                <rect id="r3tex6" x="986.5" y="907.5" width="30" height="66" fill="white" stroke="black"/>
+                <rect id="r321" x="1016.5" y="907.5" width="40" height="83" fill="white" stroke="black"/>
+                <rect id="r319" x="1056.5" y="907.5" width="84" height="83" fill="white" stroke="black"/>
+                <rect id="r317" x="1140.5" y="907.5" width="67" height="83" fill="white" stroke="black"/>
+                <rect id="r315" x="1207.5" y="907.5" width="77" height="83" fill="white" stroke="black"/>
+                <rect id="r313" x="1284.5" y="907.5" width="92" height="83" fill="white" stroke="black"/>
+                <rect id="r318" x="1016.5" y="788.5" width="51" height="76" fill="white" stroke="black"/>
+                <rect id="r316" x="1067.5" y="788.5" width="56" height="76" fill="white" stroke="black"/>
+                <rect id="r314" x="1123.5" y="788.5" width="124" height="76" fill="white" stroke="black"/>
+                <rect id="r311a" x="1376.5" y="871.5" width="46" height="36" fill="white" stroke="black"/>
+                <path id="t3_m3"
+                      d="M1266 788L1247.5 788L1247.5 864.5L1312.5 864.5L1312.5 847L1325.33 833.14L1275.33 779.567L1266 788Z"
+                      stroke="black"/>
+                <path id="t3_w2"
+                      d="M1325.33 833.14L1275.52 779.482L1284.5 772L1284.5 759.5L1375.5 759.5L1375.5 816.274L1342.83 816.274L1325.33 833.14Z"
+                      stroke="black"/>
+                <rect id="r311" x="1422.5" y="787.5" width="97" height="84" fill="white" stroke="black"/>
+                <rect id="r309" x="1422.5" y="728.5" width="97" height="59" fill="white" stroke="black"/>
+                <rect id="r307" x="1422.5" y="659.5" width="97" height="69" fill="white" stroke="black"/>
+                <g id="r305">
+                    <mask id="path-67-inside-3_29_230" fill="white">
+                        <path d="M1422 609H1520V660H1422V609Z"/>
+                    </mask>
+                    <path d="M1422 609H1520V660H1422V609Z" fill="white" stroke="black" stroke-width="2"
+                          mask="url(#path-67-inside-3_29_230)"/>
+                </g>
+                <rect id="r303" x="1422.5" y="581.5" width="97" height="28" fill="white" stroke="black"/>
+                <rect id="r312" x="1284.5" y="659.5" width="91" height="100" fill="white" stroke="black"/>
+                <rect id="r310" x="1284.47" y="605.823" width="90.9289" height="53.4595" fill="white" stroke="black"/>
+                <rect id="r308" x="1284.5" y="580.5" width="91" height="25" fill="white" stroke="black"/>
+                <rect id="ladder3_4" x="1496.5" y="507.5" width="55" height="43.3321" fill="white" stroke="black"/>
+                <g id="cash">
+                    <mask id="path-73-inside-4_29_230" fill="white">
+                        <path d="M1328 477H1354V499H1328V477Z"/>
+                    </mask>
+                    <path d="M1328 477H1354V499H1328V477Z" fill="white" stroke="black" stroke-width="2"
+                          mask="url(#path-73-inside-4_29_230)"/>
+                </g>
+                <g id="r306">
+                    <mask id="path-74-inside-5_29_230" fill="white">
+                        <path d="M1284 439.009H1376V474.046H1284V439.009Z"/>
+                    </mask>
+                    <path d="M1284 439.009H1376V474.046H1284V439.009Z" fill="white" stroke="black" stroke-width="2"
+                          mask="url(#path-74-inside-5_29_230)"/>
+                </g>
+                <rect id="r301" x="1423.5" y="369.5" width="93" height="104" fill="white" stroke="black"/>
+                <g id="r304">
+                    <mask id="path-76-inside-6_29_230" fill="white">
+                        <path d="M1284 403H1376V440H1284V403Z"/>
+                    </mask>
+                    <path d="M1284 403H1376V440H1284V403Z" fill="white" stroke="black" stroke-width="2"
+                          mask="url(#path-76-inside-6_29_230)"/>
+                </g>
+                <g id="r302">
+                    <mask id="path-77-inside-7_29_230" fill="white">
+                        <path d="M1284 368.935H1376V403.972H1284V368.935Z"/>
+                    </mask>
+                    <path id="r302" d="M1284 368.935H1376V403.972H1284V368.935Z" fill="white" stroke="black" stroke-width="2"
+                          mask="url(#path-77-inside-7_29_230)"/>
+                </g>
+                <g id="r300">
+                    <mask id="path-78-inside-8_29_230" fill="white">
+                        <path d="M1284 274H1424V370H1284V274Z"/>
+                    </mask>
+                    <path d="M1284 274H1424V370H1284V274Z" fill="white" stroke="black" stroke-width="2"
+                          mask="url(#path-78-inside-8_29_230)"/>
+                </g>
+            </g>
+            <path id="walls3"
+                  d="M538.5 986.5V927H492.5V886.5H402.5V598H421.5V497.5H405.5V189.5H495.5V139.5H553.5V67.5H1111.5V145.5H1173.5V273.5H989.5V309.5H937.5V266.5H658L635.5 283.239V497.5H603.5V595.5H635.5V767L645 780.5L653 789.5H904.5V799.5H1016.36V788.5H1247.5H1266.5L1284.5 772V580.5H1308.5L1307.5 473.5H1284.5V274.5H1423.5V369.5H1516.5V473.5H1496.5V581.5H1519.5V871.5H1422.5V907.5H1376.5V990.5H1016.5V973.5H896.5V986.5H538.5Z"
+                  stroke="black"/>
+        </g>
+</svg>

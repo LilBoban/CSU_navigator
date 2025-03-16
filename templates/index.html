@@ -1,89 +1,31 @@
-<!-- templates/index.html -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Konva & Flask Map</title>
-    <script src="/static/js/konva.js"></script>    <style>
-      #container {
-        width: 100%;
-        height: 100vh;
-      }
-    </style>
-</head>
-<body>
-    <div id="container"></div>
-    <script>
-        const stage = new Konva.Stage({
-            container: 'container',
-            width: 1920,
-            height: 2522,
-        });
-
-        const layer = new Konva.Layer();
-        stage.add(layer);
-
-        fetch('/map_data')
-            .then(response => response.json())
-            .then(mapData => {
-                mapData.floors.forEach(floor => {
-                    floor.rooms.forEach(room => {
-                        let rect = new Konva.Rect({
-                            x: room.x,
-                            y: room.y,
-                            width: room.width,
-                            height: room.height,
-                            fill: room.fill || 'white',
-                            stroke: 'black',
-                            strokeWidth: 1
-                        });
-                        layer.add(rect);
-                        if (room.id) {
-                            const text = new Konva.Text({
-                                x: room.x + room.width / 2 - 10,
-                                y: room.y + room.height / 2,
-                                text: room.id,
-                                fontSize: 12,
-                                fill: 'black',
-                            });
-                            layer.add(text);
-                        }
-                    });
-
-                    floor.paths.forEach(path => {
-                        const konvaPath = new Konva.Path({
-                            data: path.d,
-                            fill: path.fill,
-                            stroke: path.stroke,
-                            strokeWidth: path.stroke_width
-                        });
-                        layer.add(konvaPath);
-                        if (path.id) {
-                            const pathRect = konvaPath.getClientRect();
-                            const text = new Konva.Text({
-                                x: pathRect.x + pathRect.width / 2,
-                                y: pathRect.y + pathRect.height / 2,
-                                text: path.id,
-                                fontSize: 12,
-                                fill: 'black',
-                                offsetX: path.id.length * 3, // Центрируем по горизонтали
-                                offsetY: 6 // Центрируем по вертикали
-                            });
-                            layer.add(text);
-                        }
-                    });
-
-                    floor.roads.forEach(road => {
-                    const line = new Konva.Line({
-                        points: [road.start.x, road.start.y, road.end.x, road.end.y],
-                        stroke: 'grey', // Цвет дороги
-                        strokeWidth: 2,
-                      });
-                    layer.add(line)
-                    });
-
-                    layer.draw();
-                });
-            });
-    </script>
-</body>
-</html>
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Навигация по вузу</title>
+      <script src="/static/js/konva.js"></script>
+      <script src="/static/js/map.js" defer></script>
+      <style>
+          #container {
+              width: 100%;
+              height: 90vh;
+          }
+          #floor-selector {
+              width: 100%;
+              text-align: center;
+              padding: 10px;
+          }
+      </style>
+  </head>
+  <body>
+      <div id="floor-selector">
+          <select id="floor-select">
+              <option value="0">Этаж 0</option>
+              <option value="1">Этаж 1</option>
+              <option value="2">Этаж 2</option>
+              <option value="3">Этаж 3</option>
+              <option value="4">Этаж 4</option>
+          </select>
+      </div>
+      <div id="container"></div>
+  </body>
+  </html>

@@ -1,37 +1,35 @@
-<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1">
- <g class="layer">
-  <title>Layer 1</title>
-  <g id="floor0">
-   <rect fill="#000000" fill-opacity="0" height="97" id="r014" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="168" x="550" y="789"/>
-   <rect fill="#000000" fill-opacity="0" height="100" id="r027" stroke="#000000" width="100" x="550" y="950"/>
-   <rect fill="#000000" fill-opacity="0" height="64" id="rtex1" stroke="#000000" width="62" x="550" y="886"/>
-   <line fill="none" fill-opacity="0" id="svg_11" stroke="#000000" x1="718" x2="753" y1="789" y2="789"/>
-   <rect fill="#000000" fill-opacity="0" height="97" id="r012" stroke="#000000" width="122" x="753" y="789"/>
-   <rect fill="#000000" fill-opacity="0" height="100" id="r025" stroke="#000000" width="65" x="650" y="950"/>
-   <rect fill="#000000" fill-opacity="0" id="svg_14" stroke="#000000" x="693" y="982"/>
-   <rect fill="#000000" fill-opacity="0" id="svg_15" stroke="#000000" x="857" y="841"/>
-   <rect fill="#000000" fill-opacity="0" height="100" id="r023" stroke="#000000" width="96" x="715" y="950"/>
-   <rect fill="#000000" fill-opacity="0" height="100" id="rtex2" stroke="#000000" width="34" x="811" y="950"/>
-   <rect fill="#000000" fill-opacity="0" height="100" id="rtex3" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="174" x="845" y="950"/>
-   <rect fill="none" fill-opacity="0" height="101" id="r008" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="101" x="916" y="691"/>
-   <rect fill="none" fill-opacity="0" height="101" id="r006" stroke="#000000" width="101" x="916" y="590"/>
-   <rect fill="none" fill-opacity="0" height="101" id="r004" stroke="#000000" width="101" x="916" y="489"/>
-   <rect fill="none" fill-opacity="0" height="60" id="rtex4" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="101" x="916" y="429"/>
-   <rect fill="none" fill-opacity="0" height="50" id="r002" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="70" x="947" y="379"/>
-   <rect fill="none" fill-opacity="0" height="50" id="r002a" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="70" x="947" y="329"/>
-   <rect fill="none" fill-opacity="0" height="50" id="r002b" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="70" x="947" y="279"/>
-   <rect fill="none" fill-opacity="0" height="145" id="r001" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="171" x="914" y="134"/>
-   <rect fill="none" fill-opacity="0" height="44" id="r003" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="74" x="1085" y="279"/>
-   <rect fill="none" fill-opacity="0" height="63" id="ladder1" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="134" x="1117" y="323"/>
-   <line fill="none" fill-opacity="0" id="svg_34" stroke="#000000" x1="1159" x2="1159" y1="386" y2="428"/>
-   <rect fill="none" fill-opacity="0" height="60" id="r007" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="103" x="1085" y="428"/>
-   <rect fill="none" fill-opacity="0" height="99" id="r009" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="103" x="1085" y="488"/>
-   <rect fill="none" fill-opacity="0" height="101" id="r011" stroke="#000000" width="103" x="1085" y="587"/>
-   <rect fill="none" fill-opacity="0" height="104" id="r013" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="103" x="1085" y="688"/>
-   <rect fill="none" fill-opacity="0" height="46" id="r015" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="103" x="1085" y="792"/>
-   <rect fill="none" fill-opacity="0" height="48" id="r017" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="103" x="1085" y="838"/>
-   <rect fill="none" fill-opacity="0" height="64" id="ladder2" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="108" x="982" y="886"/>
-   <path d="m916,748l-41.2,40.8l0,97l78,-0.8l0,-93l-36.6,0l-0.2,-44z" fill="#FFFFFF" fill-opacity="0" id="rtex5" stroke="black" transform="matrix(1 0 0 1 0 0)"/>
-  </g>
- </g>
+<svg width="1920" height="2522" viewBox="0 0 1920 2522" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="floor0">
+        <path id="walls0"
+              d="M1090.5 819V883H1019.5V983H552.5V722H876.5L917.5 681V362H948.5V212H915.5V67H1085.5V212H1159.5V256H1251.5V319H1159.5V361H1188.5V819H1090.5Z"
+              stroke="black"/>
+
+        <path id="r014" d="M720.5 722H552.5L552.5 819H720.5V722Z" stroke="black"/>
+        <path id="r0tex1" d="M614.5 819L552.5 819V883H614.5V819Z" stroke="black"/>
+        <path id="r027" d="M652.572 883L552.5 883V983L652.572 982.5V883Z" stroke="black"/>
+        <path id="r012" d="M876.609 722L754.5 722V819L876.609 818.679V722Z" stroke="black"/>
+        <path id="r025" d="M717.5 883L652.778 883.071L652.5 982.5L716.5 983L717.5 883Z" stroke="black"/>
+        <path id="r023" d="M812.5 883L717.5 883L716.5 983H812.5V883Z" stroke="black"/>
+        <path id="r0tex2" d="M846.5 883H812.5V983L846.5 982.5V883Z" stroke="black"/>
+        <path id="r0tex3" d="M1019.5 883H846.5V982.5L1019.5 983V883Z" stroke="black"/>
+        <path id="r0tex4" d="M953.5 724.877V819L876.609 818.679V721.785L917.434 680.83L917.5 725L953.5 724.877Z"
+              stroke="black"/>
+        <path id="r008" d="M1018.07 623.5L917.5 624V725L1018.07 724.519V623.5Z" stroke="black"/>
+        <path id="r006" d="M1017.5 523.002H917.434L917.5 624L1017.5 623.892V523.002Z" stroke="black"/>
+        <path id="r004" d="M1017.5 422.112H917.434V523.002H1017.5V422.112Z" stroke="black"/>
+        <path id="r0tex4_2" d="M1017.5 362H917.5L917.434 422.112H1017.5V362Z" stroke="black"/>
+        <path id="r002" d="M1018 312.233H948.5V362L1018 362.178V312.233Z" stroke="black"/>
+        <path id="r002a" d="M1018 262.287H948.5V312.233H1018V262.287Z" stroke="black"/>
+        <path id="r002b" d="M1017.51 212.041L948.5 212V262.287H1017.51V212.041Z" stroke="black"/>
+        <path id="r001" d="M1085.5 67H915.515L915.515 212H1085.5L1085.5 67Z" stroke="black"/>
+        <path id="r003" d="M1159.5 212H1085.5V256H1159.39L1159.5 212Z" stroke="black"/>
+        <path id="ladder0_1" d="M1251.5 256H1117.43L1117.5 319L1251.5 319.108L1251.5 256Z" stroke="black"/>
+        <path id="r007" d="M1188.5 361H1085.5V421H1188.5L1188.5 361Z" stroke="black"/>
+        <path id="r009" d="M1188.5 421H1085.5V520.005H1188.5V421Z" stroke="black"/>
+        <path id="r011" d="M1188.5 520.005L1085.5 520V621L1188.5 620.895V520.005Z" stroke="black"/>
+        <path id="r013" d="M1188.5 621H1085.5V725H1188.5V621Z" stroke="black"/>
+        <path id="r015" d="M1188.5 725H1085.5V771H1188.5V725Z" stroke="black"/>
+        <path id="r017" d="M1188.5 771L1085.5 770.57V819L1188.5 819V771Z" stroke="black"/>
+        <path id="ladder0_2" d="M1090.5 819H983.5L983.5 882.999H1090.5V819Z" stroke="black"/>
+    </g>
 </svg>
