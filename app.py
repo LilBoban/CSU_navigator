@@ -10,6 +10,7 @@ app = Flask(__name__, static_folder="static")
 def parse_element(element, transform_regex):
     elements = []
 
+
     # Обработка прямоугольников
     if element.tag.endswith("rect"):
         attributes = element.attrib
@@ -25,13 +26,7 @@ def parse_element(element, transform_regex):
             x += float(transform_match.group(1))
             y += float(transform_match.group(2))
 
-        fill_color = None
-        if style:
-            style_parts = style.split(";")
-            for part in style_parts:
-                if part.startswith("fill:"):
-                    fill_color = part.split(":")[1].strip()
-                    break
+        fill_color = attributes.get("fill")
 
         elements.append({
             "type": "rect",
@@ -169,4 +164,4 @@ def static_files(filename):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
