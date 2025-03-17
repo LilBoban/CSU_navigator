@@ -24,7 +24,7 @@
         <path id="r003" d="M1159.5 212H1085.5V256H1159.39L1159.5 212Z" stroke="black"/>
         <g id="ladder0_2">
             <rect id="ladder0_2_3" x="1117.5" y="256.5" width="134" height="63" stroke="black"/>
-            <path id="ladder0_2_2"
+            <path
                   d="M1209 271H1193.33C1192.78 271 1192.33 271.448 1192.33 272V287C1192.33 287.552 1191.89 288 1191.33 288H1176.67C1176.11 288 1175.67 288.448 1175.67 289V304C1175.67 304.552 1175.22 305 1174.67 305H1159"
                   stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </g>
@@ -36,7 +36,7 @@
         <path id="r017" d="M1188.5 771L1085.5 770.57V819H1188.5V771Z" stroke="black"/>
         <g id="ladder0_1">
             <rect id="ladder0_1_3" x="983.5" y="819.5" width="107" height="63" stroke="black"/>
-            <path id="ladder0_1_2"
+            <path
                   d="M1062 834H1046.33C1045.78 834 1045.33 834.448 1045.33 835V850C1045.33 850.552 1044.89 851 1044.33 851H1029.67C1029.11 851 1028.67 851.448 1028.67 852V867C1028.67 867.552 1028.22 868 1027.67 868H1012"
                   stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </g>

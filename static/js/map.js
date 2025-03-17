@@ -249,7 +249,7 @@ stage.on('wheel', (e) => {
       .then(response => response.json())
       .then(data => {
           mapData = data;
-          renderFloor(0);  // Первоначальная отрисовка 0 этажа
+          renderFloor(1);  // Первоначальная отрисовка 0 этажа
       });
 
   floorSelect.addEventListener('change', (e) => {
