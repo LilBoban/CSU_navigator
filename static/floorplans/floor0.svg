@@ -3,13 +3,12 @@
         <path id="walls0"
               d="M1090.5 819V883H1019.5V983H552.5V722H876.5L917.5 681V362H948.5V212H915.5V67H1085.5V212H1159.5V256H1251.5V319H1159.5V361H1188.5V819H1090.5Z"
               stroke="black"/>
-
-        <path id="r014" d="M720.5 722H552.5L552.5 819H720.5V722Z" stroke="black"/>
-        <path id="r0tex1" d="M614.5 819L552.5 819V883H614.5V819Z" stroke="black"/>
-        <path id="r027" d="M652.572 883L552.5 883V983L652.572 982.5V883Z" stroke="black"/>
-        <path id="r012" d="M876.609 722L754.5 722V819L876.609 818.679V722Z" stroke="black"/>
+        <path id="r014" d="M720.5 722H552.5V819H720.5V722Z" stroke="black"/>
+        <path id="r0tex1" d="M614.5 819H552.5V883H614.5V819Z" stroke="black"/>
+        <path id="r027" d="M652.572 883H552.5V983L652.572 982.5V883Z" stroke="black"/>
+        <path id="r012" d="M876.609 722H754.5V819L876.609 818.679V722Z" stroke="black"/>
         <path id="r025" d="M717.5 883L652.778 883.071L652.5 982.5L716.5 983L717.5 883Z" stroke="black"/>
-        <path id="r023" d="M812.5 883L717.5 883L716.5 983H812.5V883Z" stroke="black"/>
+        <path id="r023" d="M812.5 883H717.5L716.5 983H812.5V883Z" stroke="black"/>
         <path id="r0tex2" d="M846.5 883H812.5V983L846.5 982.5V883Z" stroke="black"/>
         <path id="r0tex3" d="M1019.5 883H846.5V982.5L1019.5 983V883Z" stroke="black"/>
         <path id="r0tex4" d="M953.5 724.877V819L876.609 818.679V721.785L917.434 680.83L917.5 725L953.5 724.877Z"
@@ -21,15 +20,25 @@
         <path id="r002" d="M1018 312.233H948.5V362L1018 362.178V312.233Z" stroke="black"/>
         <path id="r002a" d="M1018 262.287H948.5V312.233H1018V262.287Z" stroke="black"/>
         <path id="r002b" d="M1017.51 212.041L948.5 212V262.287H1017.51V212.041Z" stroke="black"/>
-        <path id="r001" d="M1085.5 67H915.515L915.515 212H1085.5L1085.5 67Z" stroke="black"/>
+        <path id="r001" d="M1085.5 67H915.515V212H1085.5V67Z" stroke="black"/>
         <path id="r003" d="M1159.5 212H1085.5V256H1159.39L1159.5 212Z" stroke="black"/>
-        <path id="ladder0_1" d="M1251.5 256H1117.43L1117.5 319L1251.5 319.108L1251.5 256Z" stroke="black"/>
-        <path id="r007" d="M1188.5 361H1085.5V421H1188.5L1188.5 361Z" stroke="black"/>
+        <g id="ladder0_2">
+            <rect id="ladder0_2_3" x="1117.5" y="256.5" width="134" height="63" stroke="black"/>
+            <path id="ladder0_2_2"
+                  d="M1209 271H1193.33C1192.78 271 1192.33 271.448 1192.33 272V287C1192.33 287.552 1191.89 288 1191.33 288H1176.67C1176.11 288 1175.67 288.448 1175.67 289V304C1175.67 304.552 1175.22 305 1174.67 305H1159"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <path id="r007" d="M1188.5 361H1085.5V421H1188.5V361Z" stroke="black"/>
         <path id="r009" d="M1188.5 421H1085.5V520.005H1188.5V421Z" stroke="black"/>
         <path id="r011" d="M1188.5 520.005L1085.5 520V621L1188.5 620.895V520.005Z" stroke="black"/>
         <path id="r013" d="M1188.5 621H1085.5V725H1188.5V621Z" stroke="black"/>
         <path id="r015" d="M1188.5 725H1085.5V771H1188.5V725Z" stroke="black"/>
-        <path id="r017" d="M1188.5 771L1085.5 770.57V819L1188.5 819V771Z" stroke="black"/>
-        <path id="ladder0_2" d="M1090.5 819H983.5L983.5 882.999H1090.5V819Z" stroke="black"/>
+        <path id="r017" d="M1188.5 771L1085.5 770.57V819H1188.5V771Z" stroke="black"/>
+        <g id="ladder0_1">
+            <rect id="ladder0_1_3" x="983.5" y="819.5" width="107" height="63" stroke="black"/>
+            <path id="ladder0_1_2"
+                  d="M1062 834H1046.33C1045.78 834 1045.33 834.448 1045.33 835V850C1045.33 850.552 1044.89 851 1044.33 851H1029.67C1029.11 851 1028.67 851.448 1028.67 852V867C1028.67 867.552 1028.22 868 1027.67 868H1012"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
     </g>
 </svg>
