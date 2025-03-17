@@ -128,6 +128,137 @@ stage.on('wheel', (e) => {
     stage.batchDraw();
 });
 
+// Добавляем обработку мультитач-событий
+let initialDistance = 0;
+let initialScale = 1;
+
+stage.on('touchstart', function(e) {
+  const touch0 = e.evt.touches[0];
+  const touch1 = e.evt.touches[1];
+
+  // Если два пальца
+  if (touch1) {
+      // Отключаем стандартное перетаскивание
+      stage.draggable(false);
+
+      // Вычисляем начальное расстояние между пальцами
+      initialDistance = Math.hypot(
+          touch1.pageX - touch0.pageX,
+          touch1.pageY - touch0.pageY
+      );
+
+      // Запоминаем начальный масштаб
+      initialScale = stage.scaleX();
+  }
+});
+
+stage.on('touchmove', function(e) {
+  const touch0 = e.evt.touches[0];
+  const touch1 = e.evt.touches[1];
+
+  // Работаем только с двумя пальцами
+  if (touch1) {
+      // Вычисляем текущее расстояние между пальцами
+      const currentDistance = Math.hypot(
+          touch1.pageX - touch0.pageX,
+          touch1.pageY - touch0.pageY
+      );
+
+      // Вычисляем коэффициент масштабирования
+      const scale = currentDistance / initialDistance;
+
+      // Новый масштаб
+      const newScale = Math.max(
+          MIN_SCALE,
+          Math.min(MAX_SCALE, initialScale * scale)
+      );
+
+      // Центр зума - середина между пальцами
+      const pointerPosition = {
+          x: (touch0.pageX + touch1.pageX) / 2,
+          y: (touch0.pageY + touch1.pageY) / 2
+      };
+
+      // Временно устанавливаем позицию указателя
+      stage.setPointersPositions(e.evt);
+
+      // Вычисляем позицию с учетом зума
+      const mousePointTo = {
+          x: (pointerPosition.x - stage.x()) / stage.scaleX(),
+          y: (pointerPosition.y - stage.y()) / stage.scaleX(),
+      };
+
+      // Применяем масштаб
+      stage.scale({ x: newScale, y: newScale });
+
+      // Вычисляем новую позицию
+      const newPos = {
+          x: pointerPosition.x - mousePointTo.x * newScale,
+          y: pointerPosition.y - mousePointTo.y * newScale
+      };
+
+      // Ограничиваем позицию
+      const constrainedPos = constrainPosition(newPos);
+      stage.position(constrainedPos);
+
+      stage.batchDraw();
+  }
+});
+
+stage.on('touchend', function(e) {
+  // Возвращаем возможность перетаскивания
+  stage.draggable(true);
+});
+
+// Улучшаем обработку одиночного касания для перетаскивания
+let startPos = { x: 0, y: 0 };
+
+stage.on('touchstart', function(e) {
+  // Если одно касание
+  if (e.evt.touches.length === 1) {
+      const touch = e.evt.touches[0];
+      startPos = {
+          x: touch.pageX,
+          y: touch.pageY
+      };
+  }
+});
+
+stage.on('touchmove', function(e) {
+  // Если одно касание и не мультитач
+  if (e.evt.touches.length === 1) {
+      const touch = e.evt.touches[0];
+      const dx = touch.pageX - startPos.x;
+      const dy = touch.pageY - startPos.y;
+
+      // Обновляем позицию
+      const currentPos = stage.position();
+      const newPos = {
+          x: currentPos.x + dx,
+          y: currentPos.y + dy
+      };
+
+      // Ограничиваем позицию
+      const constrainedPos = constrainPosition(newPos);
+      stage.position(constrainedPos);
+      stage.batchDraw();
+
+      // Обновляем начальную позицию
+      startPos = {
+          x: touch.pageX,
+          y: touch.pageY
+      };
+  }
+});
+
+// Предотвращаем стандартное поведение прокрутки
+document.addEventListener('touchmove', function(e) {
+  // Отключаем стандартную прокрутку для элементов с зумом
+  if (e.target.closest('#container')) {
+      e.preventDefault();
+  }
+}, { passive: false });
+
   const layer = new Konva.Layer();
   stage.add(layer);
 
